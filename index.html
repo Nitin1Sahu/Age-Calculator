@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/20926c965f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="day-container">
+        <label for="day">DAY</label><br />
+        <input type="number" name="day" id="day" onchange="getDate()">
+      </div>
+      <div class="day-month">
+        <label for="month">MONTH</label><br />
+        <input type="number" name="month" id="month" onchange="getDate()">
+      </div>
+      <div class="day-year">
+        <label for="year">YEAR</label><br />
+        <input type="number" name="year" id="year" onchange="getDate()">
+      </div>
+    </form>
+    <div class="submit">
+      <div class="border"></div>
+      <button type="submit"><i class="fa-solid fa-pen-fancy"></i></button>
+    </div>
+    <div class="input-area">
+      <h1><span id="years">28</span> Years</h1>
+      <h1><span id="months">3</span> Months</h1>
+      <h1><span id="days">6</span> Days</h1>
+    </div>
+
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
+
+
+<!--
+Day
+DD
+
+Month
+MM
+
+Year
+YYYY
+
+-- years
+-- months
+-- days
+ -->
